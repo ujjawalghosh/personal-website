@@ -1,0 +1,218 @@
+* {
+    color:white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    padding:38px;
+    margin:18px;
+    background-color: #090808;
+    font-family: Arial, sans-serif;
+    box-shadow: inset 0 0 10px rgba(74, 144, 226, 0.6);
+    line-height: 1.8;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    border-radius:4rem;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    background-color: rgb(12,12,12);
+    color: white;
+    height: 2.3rem;
+    width:100%;
+}
+
+.main-upper-text {
+    font-size: 1rem;
+}
+
+nav {
+    width: 48rem;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #efa58f;
+    border: none;
+    border-radius:29px;
+    cursor: pointer;
+}
+
+.reachUs-button {
+    padding: 1rem;
+    background-color: #0dac30;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #4a90e2, #4ab772);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #4a90e2;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin: 0 1rem 0 0;
+    animation: pulseGlow 2s infinite;
+}
+.reachUs-button:hover {
+  box-shadow: 0 0 20px #357ABD, 0 0 30px #4a90e2;
+  transform: scale(1.1);
+  background-color: #c5e9c3;
+}
+
+button{
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgb(18, 99, 14,0.4);
+    box-shadow: 0 0 8px #054d9f;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin: 0 1rem 0 0;
+    animation: pulseGlow 2s infinite;
+    margin:30px;
+    line-height:normal;
+    height:4ef;
+}
+
+button:hover{
+    box-shadow: 0 0 20px #357ABD, 0 0 30px #4a90e2;
+    transform: scale(1.1);
+    background-color: #0f100f;
+}
+
+/* Project Section Styles */
+
+/* Darker blackish background with subtle gradient */
+.projects-section {
+    background: linear-gradient(135deg, #090808, #1c1c1c);
+    color: #fff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    width:100%;
+}
+
+/* Section title styling */
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Container for projects - stacked in a single column */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+    width:100%;
+}
+
+/* Individual project card styling */
+.project-card {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+    padding: 30px 35px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #444;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.9);
+    border-color: #6a1b9a;
+}
+
+/* Project title styling */
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    color: #bb86fc;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Project description styling */
+.project-description {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+/* Project link button styling */
+.project-link {
+    align-self: flex-start;
+    background: #bb86fc;
+    color: #121212;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 15px rgba(187, 134, 252, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for project link */
+.project-link:hover {
+    background: #d1aaff;
+    box-shadow: 0 8px 20px rgba(209, 170, 255, 0.8);
+}
+
+/* Responsive nav-menu toggle */
+#nav-menu {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #121212;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem 0;
+    }
+    #nav-menu.active {
+        display: flex;
+    }
+}
